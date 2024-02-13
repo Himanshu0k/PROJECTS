@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        to right,
+        cadetblue 0%,
+        cadetblue 50%,
+        bisque 50%,
+        bisque 100%
+    );
+    display: flex;
+    justify-content:center;
+    margin-top: 70px;
+}
+
+.FORM {
+    border-radius: 1.5%;
+    background-color: white;
+    width: 80%;
+    height: 540px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5%;
+}
+
+.complete-logo {
+    display: flex;
+}
+
+.logo {
+    height: 20px;
+    padding-left: 12%;
+    justify-content: start;
+    padding-left: 250%;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    gap: 8%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-main {
+    display: flex;
+}
+
+.main-display-text {
+    margin-top: 170px;
+    padding-left: 8%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+
+.main-display-text > p {
+    font-size: small;
+}
+
+.main-display-text button {
+    border : none;
+    border-radius: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    background-color: cadetblue;
+    margin-top: 30px;
+}
+
+.display-image {
+    height: 400px;
+    padding-left: 40%;
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4%;
+}
+
+.social-media {
+    padding-left: 20%;
+    justify-content: space-evenly;
+}
+
+a {
+    color: cadetblue;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: end;
+    gap: 10%;
+}
+
+.menu, .social-media, .footer-menu, button  :hover {
+    cursor: pointer;
+}

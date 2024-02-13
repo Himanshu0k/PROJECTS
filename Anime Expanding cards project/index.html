@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expanding Cards</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="panel" style="background-image: url('https://wallpapers-clan.com/wp-content/uploads/2023/11/naruto-itachi-uchiha-red-desktop-wallpaper-preview.jpg')">
+        <!-- <h3>Itachi-Uchiha</h3>  -->
+      </div>
+      <div class="panel" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/275/20/862/akatsuki-itachi-mangekyou-naruto-wallpaper-preview.jpg')">
+        <!-- <h3>Madara-Uchiha</h3> -->
+      </div>
+      <div class="panel" style="background-image: url('https://getwallpapers.com/wallpaper/full/f/d/c/853097-free-download-itachi-uchiha-wallpaper-2000x1200-full-hd.jpg')">
+        <!-- <h3>Saskue-Uchiha</h3> -->
+      </div>
+      <div class="panel" style="background-image: url('https://www.pixel4k.com/wp-content/uploads/2023/11/itachi-2077-gaming-4k_1699030275.jpg')">
+        <!-- <h3>Naruto-Uzumaki</h3> -->
+      </div>
+      <div class="panel" style="background-image: url('https://4kwallpapers.com/images/wallpapers/itachi-uchiha-naruto-minimal-art-red-background-5k-1920x1200-7749.jpg')">
+        <!-- <h3>Jiraya-Sensie</h3> -->
+      </div>
+
+    </div>
+
+    <script>
+        var image = document.querySelectorAll('.panel')
+
+        image.forEach(panel => {
+            panel.addEventListener('click', () => {
+                removeActiveClasses()
+                panel.classList.add('active')
+            })
+        })
+
+        function removeActiveClasses() {
+            image.forEach(panel => {
+                panel.classList.remove('active')
+            })
+        }
+    </script>
+    
+  </body>
+</html>
